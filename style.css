@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-font: 'Barlow', sans-serif;
+    --tille-font: 'Fraunces', serif;
+    --red: #fe7867;
+    --yellow: #fad400;
+    --gray: #a7abae;
+    --white: #ffffff;
+    --graphic-text: #25564b;
+    --photography-text: #19536b;
+    --footer: #458c7e;
+    --background: #FFFBFB;
+}
+
+body{
+    font-family: var(--text-font);
+    background-color: var(--background);
+}
+header{
+    height: 80vh;
+    background-image: url(./images/mobile/image-header.jpg);
+    background-position: bottom;
+    background-size: cover;
+    color: var(--white);
+    padding: 32px 16px;
+    display: grid;
+    place-items: start center;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header .logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+    
+}
+header h1{
+    font-family: var(--tille-font);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    text-align: center;
+}
