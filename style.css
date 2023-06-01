@@ -17,21 +17,22 @@
     --background: #FFFBFB;
 }
 
+
 body{
     font-family: var(--text-font);
     background-color: var(--background);
 }
 header{
     height: 80vh;
-    background-image: url(./images/mobile/image-header.jpg);
     background-position: bottom;
     background-size: cover;
     color: var(--white);
-    padding: 32px 16px;
+    padding: 32px 46px;
     display: grid;
+    
+    background-image: url(./images/mobile/image-header.jpg);
     place-items: start center;
 }
-
 header nav{
     display: flex;
     justify-content: space-between;
@@ -39,214 +40,297 @@ header nav{
     width: 100%;
 }
 
-header .logo{
-    font-size: 1.5rem;
-    font-weight: 700;
-    
+.logo{
+    font-size: 2rem;
+    font-weight: 700; 
 }
+.menu img{
+  display: none;
+}
+.menu2{
+  display: flex;
+  gap: 52px;
+}
+.menu-texto{
+  display: flex;
+  padding-top: 20px;
+  gap: 52px;
+}
+.contact{
+  background-color: #fff;
+  padding: 20px 26px;
+  border-radius: 50px;
+  color: black;
+  font-family: var(--tille-font);
+}
+
 header h1{
     font-family: var(--tille-font);
-    font-size: 2.5rem;
+    font-size: 4rem;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 0.5rem;
     text-align: center;
 }
 
-.info img{
-    width: 100%;
-
-}
-.description{
-    display: grid;
-    padding: 80px 0px;
-    place-items: center;
-    height: 500px;
-    color: var--
-}
-.description__title{
-    font-family: var(--tille-font);
-    font-size: 2rem;
-    font-weight: 900;
-    text-align: center;
-    width: 300px;
-}
-.description__text{
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--gray);
-    text-align: center;
-    line-height: 2rem;
-    padding: 0px 12px;
-}
-.description__link{
-    font-family: var(--tille-font);
-    font-weight: 900;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    position: relative;
-}
-
-.line{
-    position: absolute;
-    height: 8px;
-    width: 110%;
-    left: -5%;
-    bottom: 1%;
-    z-index: -1;
-    opacity: 0.4;
-    border-radius: 10px;
-}
-
-.line-yellow{
-    background-color: var(--yellow);
-}
-
-.line-red{
-    background-color: var(--red);
-}
-
-.container{
-    height: 600px;
-    width: 100%;
-    background-size: cover;
-}
-
-.container.graphic{
- background-image: url(./images/mobile/image-graphic-design.jpg);
-}
-
-.container.photography{
-    background-image: url(./images/mobile/image-photography.jpg);
-}
-
-.container .description{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 16px;
-}
-
-.graphic *{
-    color: var(--graphic-text);
-}
-.photography *{
-    color: var(--photography-text);
-}
-.testimonials{
-    display: grid;
-    place-items: center;
-}
-.testimonials-title{
-    font-family: var(--tille-font);
-    font-size: 1.2rem;
-    color: var(--gray);
-    padding: 32px 0px;
-    letter-spacing: 3px;
-}
-.client{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 36px;
-    height: 400px;
-    text-align: center;
-}
-.client__avatar{
-    width: 76px;
-    height: 76px;
-    border-radius: 50%;
-    background-position: center;
-    background-size: cover;
-}
-.client__avatar.client1{
-    background-image: url(./images/image-emily.jpg);
-}
-.client__avatar.client2{
-    background-image: url(./images/image-thomas.jpg);
-}
-.client__avatar.client3{
-    background-image: url(./images/image-jennie.jpg);
-}
-.client__text{
-    font-size: 1.2rem;
-    font-weight: 600;
-    opacity: 0.7;
-    line-height: 2rem;
-    padding: 0px 16px;
-    color: black;
-}
-
-.client__name{
-    font-family: var(--tille-font);
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-.client__job{
-    color: var(--gray);
-    font-weight: 600;
-    padding: 16px;
-}
-
-.images{
-    height: 400px;
-    display: grid;
-    grid-template-areas: 
-    "i1 i2"
-    "i3 i4";
-}
-
-.image1{
-    grid-area: i1;
-    background-size: cover;
-    background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
-}
-.image2{
-    grid-area: i2;
-    background-size: cover;
-    background-image: url(./images/mobile/image-gallery-orange.jpg);
-}
-.image3{
-    grid-area: i3;
-    background-size: cover;
-    background-image: url(./images/mobile/image-gallery-cone.jpg);
-}
-.image4{
-    grid-area: i4;
-    background-size: cover;
-    background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
-}
 
 
-footer{
-    height: 350px;
-    background-color: #90D4C5;
-    justify-content: space-between;
-    font-family: var(--text-font);
-    color: #2C7566;
-}
-h3{
-    text-align: center;
-    font-weight: 800;
-    font-size: 2.3rem;
-    padding-top: 42px;
-}
-.nav__footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 34px;
-}
 
-.icone__social{
-    padding-top: 42px;
-    padding-left: 7.2rem;
-    display: flex;
-    gap: 1.2rem;
+
+
+
+
+
+
+@media (max-width: 1024px){
+    body{
+        font-family: var(--text-font);
+        background-color: var(--background);
+    }
+    header{
+        height: 80vh;
+        background-image: url(./images/mobile/image-header.jpg);
+        background-position: bottom;
+        background-size: cover;
+        color: var(--white);
+        padding: 32px 16px;
+        display: grid;
+        place-items: start center;
+    }
     
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    
+    header .logo{
+        font-size: 1.5rem;
+        font-weight: 700;
+        
+    }
+    header h1{
+        font-family: var(--tille-font);
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 0.5rem;
+        text-align: center;
+    }
+    
+    .info img{
+        width: 100%;
+    
+    }
+    
+    .menu2{
+     display: none;
+    }
+    .description{
+        display: grid;
+        padding: 80px 0px;
+        place-items: center;
+        height: 500px;
+        color: var--
+    }
+    .description__title{
+        font-family: var(--tille-font);
+        font-size: 2rem;
+        font-weight: 900;
+        text-align: center;
+        width: 300px;
+    }
+    .description__text{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--gray);
+        text-align: center;
+        line-height: 2rem;
+        padding: 0px 12px;
+    }
+    .description__link{
+        font-family: var(--tille-font);
+        font-weight: 900;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        position: relative;
+    }
+    
+    .line{
+        position: absolute;
+        height: 8px;
+        width: 110%;
+        left: -5%;
+        bottom: 1%;
+        z-index: -1;
+        opacity: 0.4;
+        border-radius: 10px;
+    }
+    
+    .line-yellow{
+        background-color: var(--yellow);
+    }
+    
+    .line-red{
+        background-color: var(--red);
+    }
+    
+    .container{
+        height: 600px;
+        width: 100%;
+        background-size: cover;
+    }
+    
+    .container.graphic{
+     background-image: url(./images/mobile/image-graphic-design.jpg);
+    }
+    
+    .container.photography{
+        background-image: url(./images/mobile/image-photography.jpg);
+    }
+    
+    .container .description{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 16px;
+    }
+    
+    .graphic *{
+        color: var(--graphic-text);
+    }
+    .photography *{
+        color: var(--photography-text);
+    }
+    .testimonials{
+        display: grid;
+        place-items: center;
+    }
+    .testimonials-title{
+        font-family: var(--tille-font);
+        font-size: 1.2rem;
+        color: var(--gray);
+        padding: 32px 0px;
+        letter-spacing: 3px;
+    }
+    .client{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 36px;
+        height: 400px;
+        text-align: center;
+    }
+    .client__avatar{
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+    }
+    .client__avatar.client1{
+        background-image: url(./images/image-emily.jpg);
+    }
+    .client__avatar.client2{
+        background-image: url(./images/image-thomas.jpg);
+    }
+    .client__avatar.client3{
+        background-image: url(./images/image-jennie.jpg);
+    }
+    .client__text{
+        font-size: 1.2rem;
+        font-weight: 600;
+        opacity: 0.7;
+        line-height: 2rem;
+        padding: 0px 16px;
+        color: black;
+    }
+    
+    .client__name{
+        font-family: var(--tille-font);
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    
+    .client__job{
+        color: var(--gray);
+        font-weight: 600;
+        padding: 16px;
+    }
+    
+    .images{
+        height: 400px;
+        display: grid;
+        grid-template-areas: 
+        "i1 i2"
+        "i3 i4";
+    }
+    
+    .image1{
+        grid-area: i1;
+        background-size: cover;
+        background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+    }
+    .image2{
+        grid-area: i2;
+        background-size: cover;
+        background-image: url(./images/mobile/image-gallery-orange.jpg);
+    }
+    .image3{
+        grid-area: i3;
+        background-size: cover;
+        background-image: url(./images/mobile/image-gallery-cone.jpg);
+    }
+    .image4{
+        grid-area: i4;
+        background-size: cover;
+        background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+    }
+    
+    
+    footer{
+        height: 350px;
+        background-color: #90D4C5;
+        justify-content: space-between;
+        font-family: var(--text-font);
+        color: #2C7566;
+    }
+    h3{
+        text-align: center;
+        font-weight: 800;
+        font-size: 2.3rem;
+        padding-top: 42px;
+    }
+    .nav__footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 34px;
+    }
+    
+    .icone__social{
+        padding-top: 42px;
+        padding-left: 7.2rem;
+        display: flex;
+        gap: 1.2rem;
+        
+    }
+    
+    
+
 }
+
+
+
+
+
+
+
+
+
+
 
